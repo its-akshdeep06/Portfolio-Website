@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Akshdeep Singh - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script type="module" crossorigin src="/assets/index-COck2kF9.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-C5oR-LME.css">
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="nav">
+      <div class="nav-container">
+        <h1 class="logo">AS</h1>
+
+        <div class="nav-links" id="navLinks">
+          <a href="#home" class="nav-link" data-section="home">Home</a>
+          <a href="#about" class="nav-link" data-section="about">About</a>
+          <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+          <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+          <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+        </div>
+
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg class="sun-icon hidden" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+      </div>
+    </nav>
+    <script>
+function scrollToSection(sectionId) {
+    document.getElementById(sectionId).scrollIntoView({
+        behavior: 'smooth'
+    });
+}
+</script>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h2 class="hero-title">Hi, I'm <span class="gradient-text">Akshdeep Singh</span></h2>
+          <p class="hero-subtitle">Aspiring Computer Science & AI Engineer</p>
+          <p class="hero-description">Passionate about creating innovative solutions that merge cutting-edge technology with real-world impact</p>
+          <button class="cta-button" onclick="scrollToSection('contact')">Get In Touch</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <h3 class="section-title">About <span class="gradient-text">Me</span></h3>
+
+        <div class="about-grid">
+          <div class="about-column">
+            <div class="card card-hover">
+              <h4 class="card-title">Academic Journey</h4>
+              <p class="card-text">Currently pursuing B.Tech in Computer Science Engineering Core at SRM Institute of Science and Technology, KTR Campus, Chennai. My academic path is driven by an insatiable curiosity to understand how technology can transform lives and solve complex challenges. I'm deeply committed to leveraging computational thinking and data-driven approaches to create meaningful solutions that bridge the gap between innovation and real-world impact.</p>
+            </div>
+
+            <div class="card card-hover">
+              <h4 class="card-title">Currently Learning</h4>
+              <div class="tags-container">
+                <span class="tag tag-hover">C</span>
+                <span class="tag tag-hover">C++</span>
+                <span class="tag tag-hover">Java</span>
+                <span class="tag tag-hover">Python</span>
+                <span class="tag tag-hover">JavaScript</span>
+                <span class="tag tag-hover">CSS</span>
+                <span class="tag tag-hover">Machine Learning</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-column">
+            <div class="card card-hover">
+              <h4 class="card-title">Future Vision</h4>
+              <p class="card-text">My ambition extends beyond simply mastering technology—I aspire to become a pioneering Computer Science and AI Engineer who creates transformative solutions. I envision myself at the intersection of artificial intelligence, data science, and practical application, building systems that don't just process information but genuinely enhance human capabilities and address societal challenges. Every project I undertake is a stepping stone toward this vision, combining technical excellence with purposeful innovation.</p>
+            </div>
+
+            <div class="card card-hover">
+              <h4 class="card-title">Interests</h4>
+              <div class="interests-grid">
+                <div class="interest-item interest-hover">Machine Learning</div>
+                <div class="interest-item interest-hover">Data Visualization</div>
+                <div class="interest-item interest-hover">Web Development</div>
+                <div class="interest-item interest-hover">AI Research</div>
+                <div class="interest-item interest-hover">Statistics</div>
+                <div class="interest-item interest-hover">Cloud Computing</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <h3 class="section-title">Technical <span class="gradient-text">Skills</span></h3>
+
+        <div class="skills-grid" id="skillsGrid"></div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h3 class="section-title">Featured <span class="gradient-text">Projects</span></h3>
+
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-content">
+              <div class="project-header">
+                <h4 class="project-title">MindfulCare</h4>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </div>
+              <p class="project-description">A web application focused on mental health and wellness, providing resources and support for users seeking mindful care solutions.</p>
+              <a href="https://mindfulcare01.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-button">
+                View Live
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-content">
+              <div class="project-header">
+                <h4 class="project-title">C Calculator</h4>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="4" y="2" width="16" height="20" rx="2"></rect>
+                  <line x1="8" y1="6" x2="16" y2="6"></line>
+                  <line x1="8" y1="10" x2="16" y2="10"></line>
+                  <line x1="8" y1="14" x2="16" y2="14"></line>
+                  <line x1="8" y1="18" x2="16" y2="18"></line>
+                </svg>
+              </div>
+              <p class="project-description">A functional calculator application built using C language logic, featuring basic arithmetic operations including addition, subtraction, multiplication, and division.</p>
+              <button class="project-button" id="openCalculator">
+                Try Calculator
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="4" y="2" width="16" height="20" rx="2"></rect>
+                  <line x1="8" y1="6" x2="16" y2="6"></line>
+                  <line x1="8" y1="10" x2="16" y2="10"></line>
+                  <line x1="8" y1="14" x2="16" y2="14"></line>
+                  <line x1="8" y1="18" x2="16" y2="18"></line>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <h3 class="section-title">Get In <span class="gradient-text">Touch</span></h3>
+
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h4 class="contact-title">Let's Connect</h4>
+
+            <a href="mailto:akshdeepsingh2kk@gmail.com" class="contact-item">
+              <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <div>
+                <p class="contact-label">Email</p>
+                <p class="contact-value">akshdeepsingh2kk@gmail.com</p>
+              </div>
+            </a>
+
+            <a href="mailto:as6479@srmist.edu.in" class="contact-item">
+              <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <div>
+                <p class="contact-label">University Email</p>
+                <p class="contact-value">as6479@srmist.edu.in</p>
+              </div>
+            </a>
+
+            <a href="tel:+917075211652" class="contact-item">
+              <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              <div>
+                <p class="contact-label">Phone</p>
+                <p class="contact-value">+91 7075211652</p>
+              </div>
+            </a>
+
+            <div class="social-links">
+              <a href="https://github.com/akshdeep06" target="_blank" rel="noopener noreferrer" class="social-button social-github">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+                <span>akshdeep06</span>
+              </a>
+
+              <a href="https://instagram.com/its_akshdeep06" target="_blank" rel="noopener noreferrer" class="social-button social-instagram">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+                <span>its_akshdeep06</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-form-container">
+            <form class="contact-form" id="contactForm">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Your name" required>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="your.email@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" rows="4" placeholder="Your message..." required></textarea>
+              </div>
+
+              <button type="submit" class="submit-button">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 Akshdeep Singh. Crafted with passion and code.</p>
+      </div>
+    </footer>
+
+    <!-- Calculator Modal -->
+    <div class="modal" id="calculatorModal">
+      <div class="modal-overlay"></div>
+      <div class="modal-content">
+        <button class="modal-close" id="closeCalculator" aria-label="Close calculator">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+
+        <div class="calculator">
+          <div class="calculator-display" id="calcDisplay">0</div>
+
+          <button class="calculator-button calc-clear" id="calcClear">Clear</button>
+
+          <div class="calculator-grid">
+            <button class="calculator-button calc-number" data-value="7">7</button>
+            <button class="calculator-button calc-number" data-value="8">8</button>
+            <button class="calculator-button calc-number" data-value="9">9</button>
+            <button class="calculator-button calc-operator" data-value="/">/</button>
+            <button class="calculator-button calc-number" data-value="4">4</button>
+            <button class="calculator-button calc-number" data-value="5">5</button>
+            <button class="calculator-button calc-number" data-value="6">6</button>
+            <button class="calculator-button calc-operator" data-value="*">*</button>
+            <button class="calculator-button calc-number" data-value="1">1</button>
+            <button class="calculator-button calc-number" data-value="2">2</button>
+            <button class="calculator-button calc-number" data-value="3">3</button>
+            <button class="calculator-button calc-operator" data-value="-">-</button>
+            <button class="calculator-button calc-number" data-value="0">0</button>
+            <button class="calculator-button calc-number" data-value=".">.</button>
+            <button class="calculator-button calc-equals" data-value="=">=</button>
+            <button class="calculator-button calc-operator" data-value="+">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
