@@ -1,6 +1,6 @@
 # Akshdeep Singh - Portfolio Website
 
-A personal portfolio website built with **React**, **TypeScript**, **Vite**, and **Tailwind CSS**. Live at [akshportfolio-sage.vercel.app](https://akshportfolio-sage.vercel.app/).
+A personal portfolio website built with **React**, **TypeScript**, **Vite**, and **Tailwind CSS**. Live at [akshdeep06.vercel.app]([https://akshportfolio-sage.vercel.app/](https://akshdeep06.vercel.app/)).
 
 ---
 
@@ -54,36 +54,18 @@ cd Portfolio_Website
 npm install
 ```
 
-### Development
+## Live Demo
 
-```bash
-npm run dev
-```
-
-Open [http://localhost:5173](http://localhost:5173) in your browser.
-
-### Build for Production
-
-```bash
-npm run build
-```
-
-Output is generated in the `dist/` folder.
-
-### Preview Production Build
-
-```bash
-npm run preview
-```
-
-### Other Scripts
-
-```bash
-npm run lint       # Run ESLint
-npm run typecheck  # Type-check without emitting files
-```
+Deployed on Vercel at:  
+https://akshdeep06.vercel.app/
 
 ---
+
+## Development
+
+```bash
+npm install
+npm run dev
 
 ## Project Structure
 
