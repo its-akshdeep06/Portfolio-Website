@@ -113,10 +113,7 @@ skills.forEach(skill => {
 const contactForm = document.getElementById('contactForm');
 const submitButton = contactForm?.querySelector('.submit-button');
 
-// EmailJS config — fill these in after setting up emailjs.com
-const EMAILJS_SERVICE_ID  = 'Aksh_Portfolio';
-const EMAILJS_TEMPLATE_ID = 'template_o79lbli';
-const EMAILJS_PUBLIC_KEY  = 'xSj35HqlzugXRmKsp';
+
 
 // Initialise once at load time
 window.addEventListener('load', () => {
