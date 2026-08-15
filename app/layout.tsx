@@ -8,9 +8,8 @@ const syne = Syne({ subsets: ["latin"], variable: "--font-syne" })
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
 
 export const metadata: Metadata = {
-  title: "Akshdeep Singh — Developer & Builder",
+  title: "Akshdeep Singh a Developer & Builder",
   description: "The portfolio of Akshdeep Singh: developer, builder, and hackathon winner.",
-  generator: "v0.app",
   icons: {
     icon: [
       {
@@ -20,10 +19,6 @@ export const metadata: Metadata = {
       {
         url: "/icon-dark-32x32.png",
         media: "(prefers-color-scheme: dark)",
-      },
-      {
-        url: "/icon.svg",
-        type: "image/svg+xml",
       },
     ],
     apple: "/apple-icon.png",
