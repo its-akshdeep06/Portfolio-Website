@@ -63,7 +63,7 @@ export default function Navbar() {
 
         <nav aria-label="Primary navigation" className="hidden items-center gap-1.5 text-xs font-medium tracking-widest uppercase md:flex sm:gap-4 sm:text-sm">
           {navItems.map((item) => renderNavLink(item))}
-          <a href="/Akshdeep_Singh_Resume.pdf" target="_blank" rel="noopener noreferrer" download="Akshdeep_Singh_Resume.pdf" className="ml-2 inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-white/[0.04] px-3.5 py-1.5 text-xs font-semibold tracking-wider text-muted transition-colors hover:border-coral/60 hover:bg-coral/15 hover:text-coral">
+          <a href="/Akshdeep_Singh_Resume.pdf" target="_blank" rel="noopener noreferrer" className="ml-2 inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-white/[0.04] px-3.5 py-1.5 text-xs font-semibold tracking-wider text-muted transition-colors hover:border-coral/60 hover:bg-coral/15 hover:text-coral">
             <Download size={13} /> <span>RESUME</span>
           </a>
         </nav>

@@ -8,7 +8,7 @@ const syne = Syne({ subsets: ["latin"], variable: "--font-syne" })
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
 
 export const metadata: Metadata = {
-  title: "Akshdeep Singh a Developer & Builder",
+  title: "Akshdeep Singh",
   description: "The portfolio of Akshdeep Singh: developer, builder, and hackathon winner.",
   icons: {
     icon: [
