@@ -1,6 +1,7 @@
 "use client"
 
 import { useRef } from "react"
+import Image from "next/image"
 import { motion, useScroll, useTransform } from "framer-motion"
 import { ArrowUpRight, Github, Linkedin, Instagram, Mail } from "lucide-react"
 
@@ -174,9 +175,13 @@ export default function HeroSection() {
               {/* Image frame */}
               <div className="relative w-full h-full">
                 <div className="relative w-full h-full rounded-[28px] sm:rounded-[34px] overflow-hidden bg-paper">
-                  <img
+                  <Image
                     src={portrait}
                     alt="Akshdeep Singh"
+                    width={450}
+                    height={582}
+                    priority
+                    fetchPriority="high"
                     className="w-full h-full object-cover object-top brightness-[1.02] contrast-[1.02] transition-transform duration-500 ease-out group-hover:scale-105"
                   />
 

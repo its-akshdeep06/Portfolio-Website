@@ -2,14 +2,19 @@
 
 import { useEffect, useState } from "react"
 import { motion, useMotionValue, useSpring } from "framer-motion"
-import ThreeBackground from "@/components/core/ThreeBackground"
-import CustomCursor from "@/components/core/CustomCursor"
+import dynamic from "next/dynamic"
+
+const ThreeBackground = dynamic(() => import("@/components/core/ThreeBackground"), { 
+  ssr: false,
+  loading: () => <div className="fixed inset-0 z-0 pointer-events-none" />
+})
+const CustomCursor = dynamic(() => import("@/components/core/CustomCursor"), { ssr: false })
 import Navbar from "@/components/sections/navbar/Navbar"
 import HeroSection from "@/components/sections/hero/HeroSection"
-import ProjectsSection from "@/components/sections/projects/ProjectsSection"
-import AboutSection from "@/components/sections/about/AboutSection"
-import AchievementSection from "@/components/sections/achievement/AchievementSection"
-import FooterSection from "@/components/sections/footer/FooterSection"
+const ProjectsSection = dynamic(() => import("@/components/sections/projects/ProjectsSection"))
+const AboutSection = dynamic(() => import("@/components/sections/about/AboutSection"))
+const AchievementSection = dynamic(() => import("@/components/sections/achievement/AchievementSection"))
+const FooterSection = dynamic(() => import("@/components/sections/footer/FooterSection"))
 
 export default function Home() {
   const [isHovering, setIsHovering] = useState(false)

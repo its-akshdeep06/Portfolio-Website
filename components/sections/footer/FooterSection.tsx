@@ -1,5 +1,3 @@
-"use client"
-
 import { Github, Linkedin, Mail } from "lucide-react"
 
 export default function FooterSection() {

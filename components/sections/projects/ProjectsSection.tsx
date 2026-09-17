@@ -120,7 +120,7 @@ export default function ProjectsSection({ setIsHovering }: ProjectsSectionProps)
 
             {/* Left Col (3 cols): Meta Number & Tag */}
             <div className="lg:col-span-3 flex flex-row lg:flex-col gap-4 lg:gap-3 items-start">
-              <span className="text-muted/70 text-xs tracking-widest font-mono px-3 py-1 rounded-full liquid-glass-subtle">
+              <span className="text-muted/90 text-xs tracking-widest font-mono px-3 py-1 rounded-full liquid-glass-subtle">
                 {project.number}
               </span>
               <span className={`text-xs tracking-widest font-bold uppercase ${project.tagColor} px-3 py-1 rounded-full liquid-glass-subtle`}>
@@ -134,6 +134,7 @@ export default function ProjectsSection({ setIsHovering }: ProjectsSectionProps)
                 href={project.live}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label={`${project.title} - Project Link`}
                 className="group/title inline-block"
               >
                 <h3 className={`font-display text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight transition-colors duration-300 ${project.textHover}`}>
@@ -151,6 +152,7 @@ export default function ProjectsSection({ setIsHovering }: ProjectsSectionProps)
                   href={project.live}
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label={`${project.title} - Live Demo`}
                   className="inline-flex items-center gap-2 px-4 py-2 rounded-full liquid-glass-pill text-xs font-semibold tracking-widest uppercase hover:border-coral/60 hover:text-coral hover:bg-coral/10 hover:shadow-[0_0_20px_rgba(255,74,34,0.35)] transition-all duration-300 group/btn"
                 >
                   <span>Live Demo</span>
@@ -176,6 +178,7 @@ export default function ProjectsSection({ setIsHovering }: ProjectsSectionProps)
                 target="_blank"
                 rel="noopener noreferrer"
                 title={`Open ${project.title} live demo`}
+                aria-label={`${project.title} - Open project`}
                 className={`group/preview relative block w-full h-48 sm:h-56 rounded-2xl overflow-hidden liquid-glass ${project.borderHover} ${project.glowColor} transition-all duration-500 cursor-pointer shadow-xl`}
               >
                 <Image
